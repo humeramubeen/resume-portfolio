@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humera Mubeen - Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button onclick="toggleEdit()" class="btn" id="editBtn">Edit Resume</button>
+        <button onclick="downloadPDF()" class="btn">Download PDF</button>
+        <button onclick="printResume()" class="btn">Print Resume</button>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <a href="#summary" title="Summary"></a>
+        <a href="#experience" title="Experience"></a>
+        <a href="#education" title="Education"></a>
+        <a href="#skills" title="Skills"></a>
+        <a href="#contact" title="Contact"></a>
+    </nav>
+
+    <!-- Resume Page -->
+    <div class="resume" id="resume">
+        <!-- Left Column -->
+        <aside class="left-column">
+            <div class="profile">
+                <div class="photo-wrapper">
+                    <img id="profilePhoto" src="photo.jpg.jpg" alt="Profile Photo">
+                    <label class="photo-edit" for="photoInput">Change</label>
+                </div>
+                <input type="file" id="photoInput" accept="image/*" hidden>
+                <h1 class="editable" contenteditable="false">Humera Mubeen</h1>
+                <p class="editable job-title" contenteditable="false">Computer Science Engineer</p>
+            </div>
+
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <p class="editable" contenteditable="false">Email: missbee1409@gmail.com</p>
+                <p class="editable" contenteditable="false">Phone: +91 9344554525</p>
+                <p class="editable" contenteditable="false">Location: Chennai, India</p>
+                <p class="editable" contenteditable="false">LinkedIn: www.linkedin.com/humera07</p>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <span class="editable" contenteditable="false">HTML / CSS</span>
+                    <div class="skill-bar" data-level="90"></div>
+                </div>
+                <div class="skill">
+                    <span class="editable" contenteditable="false">JavaScript</span>
+                    <div class="skill-bar" data-level="85"></div>
+                </div>
+                <div class="skill">
+                    <span class="editable" contenteditable="false">Front-end Development</span>
+                    <div class="skill-bar" data-level="80"></div>
+                </div>
+                <div class="skill">
+                    <span class="editable" contenteditable="false">UI / UX Design</span>
+                    <div class="skill-bar" data-level="75"></div>
+                </div>
+                <div class="skill">
+                    <span class="editable" contenteditable="false">React</span>
+                    <div class="skill-bar" data-level="70"></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Languages</h2>
+                <p class="editable" contenteditable="false">English - Fluent</p>
+                <p class="editable" contenteditable="false">Tamil - Fluent</p>
+            </section>
+        </aside>
+
+        <!-- Right Column -->
+        <main class="right-column">
+            <section id="summary" class="section">
+                <h2>Professional Summary</h2>
+                <p class="editable" contenteditable="false">
+                    I am a Computer Science Engineer trained in App Development and UI/UX Design, based in Chennai, India.
+                </p>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3 class="editable" contenteditable="false">AWS Workshop</h3>
+                    <p class="editable company" contenteditable="false">Chennai Institute of Technology | Feb 2026</p>
+                    <p class="editable" contenteditable="false">
+                        Learned the fundamentals of cloud services & deployment models.
+                    </p>
+                </div>
+                <div class="job">
+                    <h3 class="editable" contenteditable="false">Chess Application Development</h3>
+                    <p class="editable company" contenteditable="false">Replicate.com | May 2026</p>
+                    <p class="editable" contenteditable="false">
+                        Implemented front-end features & improved user interface.
+                    </p>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="edu">
+                    <h3 class="editable" contenteditable="false">B.E Computer Science Engineering</h3>
+                    <p class="editable" contenteditable="false">Dhaanish Ahmed College of Engineering | 2025 - 2029</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <p class="editable" contenteditable="false">SQL Completion Certificate | 2026</p>
+                <p class="editable" contenteditable="false">Web Development Completion Certificate | 2026</p>
+                <p class="editable" contenteditable="false">AWS Workshop Participating Certificate | 2025</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
