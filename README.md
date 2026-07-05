@@ -21,7 +21,8 @@ A modern and responsive resume portfolio built using HTML, CSS, and JavaScript.
 
 ## Screenshots
 
-(Add Images Here)
+<img width="1280" height="902" alt="Resume portfolio" src="https://github.com/user-attachments/assets/8a3fed88-c5c8-4852-b745-c1c46050ca4b" />
+
 
 ## Installation
 
